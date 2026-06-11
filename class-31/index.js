@@ -15,7 +15,13 @@
 
 
 
+const numbers = [1, 2, 3, 3, 4, 5, 3, 6, 7, 6, 9, 1];
 
+const dublicatNumbers = numbers.filter(function (value, index, array) {
+    return array.indexOf(value) !== index
+})
+
+console.log(dublicatNumbers)
 
 
 
